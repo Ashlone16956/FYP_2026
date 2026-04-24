@@ -10,6 +10,13 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
 
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.IsPaused = false;
+            GameManager.Instance.IsGameOver = false;
+            GameManager.Instance.IsInMenu = false;
+        }
+
         SceneManager.LoadScene("Main Game");
 
     }

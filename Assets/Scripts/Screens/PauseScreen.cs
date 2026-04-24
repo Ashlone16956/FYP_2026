@@ -61,6 +61,14 @@ public class PauseScreen : MonoBehaviour
     {
 
         Time.timeScale = 1f;
+
+        if (GameManager.Instance != null) //Makes sure the paused state soesnt persist.
+        {
+            GameManager.Instance.IsPaused = false;
+            GameManager.Instance.IsGameOver = false;
+            GameManager.Instance.IsInMenu = false;
+        }
+
         SceneManager.LoadScene("Main Menu"); //Goes back to the main menu when the button is clicked.
 
     }
