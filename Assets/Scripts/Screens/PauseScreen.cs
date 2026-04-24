@@ -25,6 +25,8 @@ public class PauseScreen : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            if (GameManager.Instance.IsInMenu)
+                return;
 
             TogglePause(); //GIves the option to use the esc key to pause as well
 

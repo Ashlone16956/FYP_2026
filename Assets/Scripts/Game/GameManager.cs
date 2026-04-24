@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public bool IsGameOver = false;
     public int currentLevel = 1;
     public int highestUnlockedLevel = 1;
+    public bool IsInMenu = false;
 
     void Awake()
     {

@@ -13,6 +13,9 @@ public class UpgradeScreen : MonoBehaviour
         gameObject.SetActive(isOpen);
 
         GameManager.Instance.IsPaused = isOpen;
+        GameManager.Instance.IsInMenu = isOpen;
+
+        
         Time.timeScale = isOpen ? 0f : 1f; //Pauses the gameplay when the menu is open.
 
     }

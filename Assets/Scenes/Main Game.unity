@@ -2044,6 +2044,7 @@ MonoBehaviour:
   IsGameOver: 0
   currentLevel: 1
   highestUnlockedLevel: 1
+  IsInMenu: 0
 --- !u!1 &610005068
 GameObject:
   m_ObjectHideFlags: 0
@@ -3570,13 +3571,13 @@ RectTransform:
   m_Children:
   - {fileID: 284692955}
   - {fileID: 89205455}
+  - {fileID: 854291045}
+  - {fileID: 1235605723}
   - {fileID: 1469576996}
+  - {fileID: 1998222943}
   - {fileID: 665202433}
   - {fileID: 2064542987}
   - {fileID: 1699879540}
-  - {fileID: 854291045}
-  - {fileID: 1235605723}
-  - {fileID: 1998222943}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7809,7 +7810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1a413ad7e614d4584200993e93625b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statsPanel: {fileID: 1998222939}
+  statsScreen: {fileID: 1998222939}
   statsText: {fileID: 1103294401}
 --- !u!114 &1998222941
 MonoBehaviour:

@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class StatsUI : MonoBehaviour
 {
-    public GameObject statsPanel;
+    public GameObject statsScreen;
     public TextMeshProUGUI statsText;
     
 
     void Update()
     {
-        if (statsPanel.activeSelf)
+        if (statsScreen.activeSelf)
         {
 
             UpdateStats();
@@ -21,10 +21,10 @@ public class StatsUI : MonoBehaviour
     public void OpenStats()
     {
 
-        statsPanel.SetActive(true);
+        statsScreen.SetActive(true);
         UpdateStats();
 
-        GameManager.Instance.IsPaused = true;
+        GameManager.Instance.IsInMenu = true;
         Time.timeScale =  0f;
 
     }
@@ -32,9 +32,9 @@ public class StatsUI : MonoBehaviour
     public void CloseStats()
     {
 
-        statsPanel.SetActive(false);
+        statsScreen.SetActive(false);
 
-        GameManager.Instance.IsPaused = false;
+        GameManager.Instance.IsInMenu = false;
         Time.timeScale = 1f;
 
     }
